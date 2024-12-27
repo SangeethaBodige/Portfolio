@@ -1,0 +1,450 @@
+# Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Final Year Computer Science Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <style>
+    
+    /* /* Global Styles */
+body 
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d1dbf5;
+    color: #333;
+} 
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+
+
+
+header {
+    background-color: #333a3cbc;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+  background-color: #d1dbf5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.skill {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.skill p {
+    font-size: 1em;
+    color: #555;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  
+  padding: 60px 20px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background: linear-gradient(135deg, #2980b9, #8e44ad);
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.typewriter {
+  font-size: 3rem;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid;
+  animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: black; }
+}
+
+.highlight {
+  color: #f1c40f;
+}
+
+.btn {
+  background-color: #2980b9;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3498db;
+}
+
+.about-section, .timeline-section, .projects-section, .contact-section {
+  background-color: #d1dbf5;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 15px;
+  padding: 20px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card p {
+  color: #7f8c8d;
+  align-items: center;
+  justify-content: center;
+}
+ /* Contact Section */
+.contact-section {
+  background-color: #d1dbf5;
+  padding: 60px 20px;
+  /* text-align: center; */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #3498db;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  /* text-align: center; */
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+  </style>
+  <script>
+    // Initialize smooth scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 800,
+  speedAsDuration: true,
+  easing: 'easeInOutCubic'
+});
+
+// Initialize AOS (Animate on Scroll)
+AOS.init({
+  duration: 1200,
+  easing: 'ease-in-out',
+  once: true
+});
+
+  </script>
+</head>
+<body>
+  
+  <header>
+  <div class="container">
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#My Journey">My Journey</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="typewriter">Hi, I'm <span class="highlight">Sangeetha Bodige</span>...</h1>
+      <p>Final Year Computer Science Student | A Passionate Full Stack Developer</p>
+      <br>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+    <img src="images/profile.jpg" alt="Profile Picture" class="hero-img">
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <br>
+    <p>I'm Sangeetha Bodige, a final-year Computer Science student with a passion for Full-Stack Development. I specialize in building responsive frontends with React and scalable backends using Node.js. I'm always excited to learn new technologies and solve complex problems. Check out my journey and some of my projects below!</p>
+  </section>
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill">
+            <img src="images/java.png" alt="Java" class="skill-img">
+        </div>
+        <div class="skill">
+            <img src="images/python.jpg" alt="Python" class="skill-img">
+        </div>
+        <div class="skill">
+          <img src="images/c.png" alt="C" class="skill-img">
+        </div>
+        <div class="skill">
+            <img src="images/html.png" alt="HTML5" class="skill-img">
+        </div>
+        <div class="skill">
+            <img src="images/css.png" alt="CSS3" class="skill-img">
+          </div>
+          <div class="skill">
+            <img src="images/js.png" alt="JavaScript" class="skill-img">
+          </div>
+          <div class="skill">
+            <img src="images/reactjs.jpg" alt="ReactJs" class="skill-img">
+          </div>
+          <div class="skill">
+            <img src="images/nodejs.png" alt="NodeJs" class="skill-img">
+          </div>
+          <div class="skill">
+            <img src="images/mysql.png" alt="MySQL" class="skill-img">
+          </div>
+    </div>
+</section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="timeline-section">
+    <h2>My Journey</h2>
+    <br>
+    <div class="timeline-container">
+      <div class="timeline-item" data-aos="fade-up">
+        <h3>14 May 2024 to 21 June 2024</h3>
+        <p>Participated in Summer of AI Internship at Swecha</p>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <h3>25 Feb 2024 to 25 April 2024</h3>
+        <p>Completed internship led by EY Global Delivery Services in collaboration with AICTE on
+          Advanced Data Analytics under the Next Gen Employability Program 2023-
+          24</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Featured Projects</h2>
+    <br>
+    <div class="timeline-container">
+      <div class="project-card" data-aos="flip-left">
+        <br>
+        <br>
+        <img src="images/project1.jpeg" alt="Project Image">
+        <h3>Web based Hostel Management System</h3>
+        <!-- <p>Web based Hostel Management System</p> -->
+         <br>
+        <a href="https://github.com/SangeethaBodige/Project" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card" data-aos="flex-right">
+        <img src="images/project2.jpg" alt="Project Image">
+        <h3>Helmet and Triple Ride Violation Alert System</h3>
+        <!-- <p>Helmet and Triple Ride Violation Alert System</p> -->
+        <br>
+        <a href="https://github.com/SangeethaBodige/MiniProject"  class="btn">View on GitHub</a>
+      </div>
+    
+    </div>
+  </section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out via any of the following methods:</p>
+  <div class="contact-info">
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:sangeethabodige@gmail.com">sangeethabodige@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sangeetha-bodige-2469b1251" target="_blank">linkedin.com/in/sangeetha-bodige-2469b1251</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/SangeethaBodige" target="_blank">github.com/SangeethaBodige</a></li>
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/sangeethaa_03" target="_blank">instagram.com/sangeethaa_03</a></li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 [Your Name]. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
